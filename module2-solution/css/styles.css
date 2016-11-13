@@ -2,6 +2,8 @@
 * {
   box-sizing: border-box;
   font-family: helvetica;
+  color: black;
+  height: auto;
 }
 
 h1 {
@@ -11,12 +13,14 @@ h1 {
 
 p {
   padding: 10px;
+  margin-top: 25px;
 }
 
-section {
+.menu {
   position: relative;
   background-color: #D3D3D3;
-  border: solid black 2px;
+  border: solid black 1px;
+  margin: 15px;
 }
 
 header {
@@ -33,126 +37,131 @@ header {
 @media (min-width: 992px) {
   .col-dt-1, .col-dt-2, .col-dt-3, .col-dt-4, .col-dt-5, .col-dt-6, .col-dt-7, .col-dt-8, .col-dt-9, .col-dt-10, .col-dt-11, .col-dt-12 {
     float: left;
-    padding: 10px;
-    width: 90%;
     height: auto;
     margin-right: auto;
     margin-left: auto;
-    font-family: Helvetica;
-    color: black;
-    }  .col-dt-1 {
-      width: 8.33%;
-    }
-    .col-dt-2 {
-      width: 16.66%;
-    }
-    .col-dt-3 {
-      width: 25%;
-    }
-    .col-dt-4 {
-      width: 33.33%;
-    }
-    .col-dt-5 {
-      width: 41.66%;
-    }
-    .col-dt-6 {
-      width: 50%;
-    }
-    .col-dt-7 {
-      width: 58.33%;
-    }
-    .col-dt-8 {
-      width: 66.66%;
-    }
-    .col-dt-9 {
-      width: 74.99%;
-    }
-    .col-dt-10 {
-      width: 83.33%;
-    }
-    .col-dt-11 {
-      width: 91.66%;
-    }
-    .col-dt-12 {
-      width: 100%;
-    }
   }
+  .col-dt-1 {
+    width: 8.33%;
+  }
+  .col-dt-2 {
+    width: 16.66%;
+  }
+  .col-dt-3 {
+    width: 25%;
+  }
+  .col-dt-4 {
+    width: 33.33%;
+  }
+  .col-dt-5 {
+    width: 41.66%;
+  }
+  .col-dt-6 {
+    width: 50%;
+  }
+  .col-dt-7 {
+    width: 58.33%;
+  }
+  .col-dt-8 {
+    width: 66.66%;
+  }
+  .col-dt-9 {
+    width: 74.99%;
+  }
+  .col-dt-10 {
+    width: 83.33%;
+  }
+  .col-dt-11 {
+    width: 91.66%;
+  }
+  .col-dt-12 {
+    width: 100%;
+  }
+}
 
-  /********** Tablets only **********/
-  @media (min-width: 768px) and (max-width: 991px) {
-    .col-tb-1, .col-tb-2, .col-tb-3, .col-tb-4, .col-tb-5, .col-tb-6, .col-tb-7, .col-tb-8, .col-tb-9, .col-tb-10, .col-tb-11, .col-tb-12 {
-      float: left;
-    }
-    .col-tb-1 {
-      width: 8.33%;
-    }
-    .col-tb-2 {
-      width: 16.66%;
-    }
-    .col-tb-3 {
-      width: 25%;
-    }
-    .col-tb-4 {
-      width: 33.33%;
-    }
-    .col-tb-5 {
-      width: 41.66%;
-    }
-    .col-tb-6 {
-      width: 50%;
-    }
-    .col-tb-7 {
-      width: 58.33%;
-    }
-    .col-tb-8 {
-      width: 66.66%;
-    }
-    .col-tb-9 {
-      width: 74.99%;
-    }
-    .col-tb-10 {
-      width: 83.33%;
-    }
-    .col-tb-11 {
-      width: 91.66%;
-    }
-    .col-tb-12 {
-      width: 100%;
-    }
+/********** Tablets only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+  .col-tb-1, .col-tb-2, .col-tb-3, .col-tb-4, .col-tb-5, .col-tb-6, .col-tb-7, .col-tb-8, .col-tb-9, .col-tb-10, .col-tb-11, .col-tb-12 {
+    float: left;
+    margin-right: auto;
+    margin-left: auto;
   }
+  .col-tb-1 {
+    width: 8.33%;
+  }
+  .col-tb-2 {
+    width: 16.66%;
+  }
+  .col-tb-3 {
+    width: 25%;
+  }
+  .col-tb-4 {
+    width: 33.33%;
+  }
+  .col-tb-5 {
+    width: 41.66%;
+  }
+  .col-tb-6 {
+    width: 50%;
+  }
+  .col-tb-7 {
+    width: 58.33%;
+  }
+  .col-tb-8 {
+    width: 66.66%;
+  }
+  .col-tb-9 {
+    width: 74.99%;
+  }
+  .col-tb-10 {
+    width: 83.33%;
+  }
+  .col-tb-11 {
+    width: 91.66%;
+  }
+  .col-tb-12 {
+    width: 100%;
+  }
+}
 
-  .chicken {
-    font-weight: bold;
-    clear: both;
-    margin: 0;
-    text-align: center;
-    width: 120px;
-    padding: 5px;
-    border: solid black 2px;
-    text-align: center;
-    background-color: #ffcccc;
-  }
 
-  .beef {
-    font-weight: bold;
-    clear: both;
-    margin: 0;
-    text-align: center;
-    width: 120px;
-    padding: 5px;
-    border: solid black 2px;
-    text-align: center;
-    background-color: #ff8080;
-  }
+.chicken {
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  font-weight: bold;
+  clear: both;
+  text-align: center;
+  width: 120px;
+  padding: 5px;
+  border: solid black 1px;
+  text-align: center;
+  background-color: #ffcccc;
+}
 
-  .sushi {
-    font-weight: bold;
-    clear: both;
-    margin: 0;
-    text-align: center;
-    width: 120px;
-    padding: 5px;
-    border: solid black 2px;
-    text-align: center;
-    background-color: #E8E5B5;
-  }
+.beef {
+  position:absolute;
+  top: 0px;
+  right: 0px;
+  font-weight: bold;
+  clear: both;
+  text-align: center;
+  width: 120px;
+  padding: 5px;
+  border: solid black 1px;
+  text-align: center;
+  background-color: #ff8080;
+}
+
+.sushi {position:absolute;
+  top: 0px;
+  right: 0px;
+  font-weight: bold;
+  clear: both;
+  text-align: center;
+  width: 120px;
+  padding: 5px;
+  border: solid black 1px;
+  text-align: center;
+  background-color: #E8E5B5;
+}
